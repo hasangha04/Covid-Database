@@ -80,6 +80,7 @@ int main()
 				end = false;
 				break;
 			default:
+				cout << "Not a vaild option try again" << endl;
 				break;
 		}
 	}
