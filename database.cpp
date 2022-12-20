@@ -9,6 +9,7 @@ int main()
 	string date;
 	int cases; 
 	int deaths;
+	string returnedEntry;
 	while (end != false)
 	{
 		cout << endl;
@@ -55,13 +56,14 @@ int main()
 				cout << "What countries data would you like (put a _ for space): ";
 				cin >> country;
 				cout << endl;
-				if (table.get(country).toString() == "0 0 0 0")
+				returnedEntry = table.get(country).toString();
+				if (returnedEntry == "0 0 0 0")
 				{
 					cout << "This entry does not exist";
 				}
 				else 
 				{
-					cout << table.get(country).toString();
+					cout << returnedEntry;
 				}
 				cout << endl;
 				break;
